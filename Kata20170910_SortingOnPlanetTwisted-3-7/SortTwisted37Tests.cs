@@ -80,9 +80,15 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
     {
         public int[] SortTwisted37(int[] array)
         {
-            var newArray = array.Select(a => a == 3 ? 7 : (a == 7 ? 3 : a)).OrderBy(a => a);
+            return array.Select(Replace3to7_and_7to3)
+                        .OrderBy(a => a)
+                        .Select(Replace3to7_and_7to3)
+                        .ToArray();
+        }
 
-            return newArray.Select(a => a == 3 ? 7 : (a == 7 ? 3 : a)).ToArray();
+        private static int Replace3to7_and_7to3(int num)
+        {
+            return num == 3 ? 7 : (num == 7 ? 3 : num);
         }
     }
 }
