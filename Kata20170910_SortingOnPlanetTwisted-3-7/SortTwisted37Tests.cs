@@ -80,6 +80,14 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
             SortTwisted37ShouldBe(new[] { 12, 14, 13 }, new[] { 12, 13, 14 });
         }
 
+        [TestMethod]
+        public void input_random()
+        {
+            SortTwisted37ShouldBe(
+                new[] { -30, -15, -15, -11, -10, -4, 10, 12, 17, 27, 29, 29, 57, 61, 64, 37, 33, 38 }, 
+                new[] { 38, 27, 29, -15, 37, 12, -15, 64, 17, -4, -10, 61, 10, 29, -30, 57, 33, -11 });
+        }
+
         private static void SortTwisted37ShouldBe(int[] expected, int[] array)
         {
             var kata = new Kata();
@@ -101,7 +109,20 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
         private static int Replace3to7_and_7to3(int num)
         {
             var str = num.ToString();
-            str = str.Contains("3") ? str.Replace("3", "7") : (str.Contains("7") ? str.Replace("7", "3") : str);
+
+            if (str.Contains("3") && str.Contains("7"))
+            {
+                str = str.Replace("3", "_").Replace("7", "3").Replace("_", "7");
+            }
+            else if (str.Contains("3"))
+            {
+                str = str.Replace("3", "7");
+            }
+            else if (str.Contains("7"))
+            {
+                str = str.Replace("7", "3");
+            }
+
             return int.Parse(str);
         }
     }
