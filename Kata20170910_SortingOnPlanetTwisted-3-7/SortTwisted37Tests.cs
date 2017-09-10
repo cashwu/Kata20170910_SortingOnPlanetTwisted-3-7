@@ -38,6 +38,12 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
             SortTwisted37ShouldBe(new[] { 7, 8 }, new[] { 7, 8 });
         }
 
+        [TestMethod]
+        public void input_6_7_should_return_7_6()
+        {
+            SortTwisted37ShouldBe(new[] { 7, 6 }, new[] { 6, 7 });
+        }
+
         private static void SortTwisted37ShouldBe(int[] expected, int[] array)
         {
             var kata = new Kata();
