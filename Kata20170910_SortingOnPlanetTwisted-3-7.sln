@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26823.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata20170910_SortingOnPlanetTwisted-3-7", "Kata20170910_SortingOnPlanetTwisted-3-7\Kata20170910_SortingOnPlanetTwisted-3-7.csproj", "{8F123016-6FAB-4B70-B5B7-E195E799CA5C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8F123016-6FAB-4B70-B5B7-E195E799CA5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F123016-6FAB-4B70-B5B7-E195E799CA5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F123016-6FAB-4B70-B5B7-E195E799CA5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F123016-6FAB-4B70-B5B7-E195E799CA5C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07AE3E65-3361-4D98-9E32-BDD6B618FBDD}
+	EndGlobalSection
+EndGlobal
