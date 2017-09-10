@@ -108,22 +108,7 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
 
         private static int Replace3to7_and_7to3(int num)
         {
-            var str = num.ToString();
-
-            if (str.Contains("3") && str.Contains("7"))
-            {
-                str = str.Replace("3", "_").Replace("7", "3").Replace("_", "7");
-            }
-            else if (str.Contains("3"))
-            {
-                str = str.Replace("3", "7");
-            }
-            else if (str.Contains("7"))
-            {
-                str = str.Replace("7", "3");
-            }
-
-            return int.Parse(str);
+            return int.Parse(num.ToString().Replace("3", "_").Replace("7", "3").Replace("_", "7"));
         }
     }
 }
