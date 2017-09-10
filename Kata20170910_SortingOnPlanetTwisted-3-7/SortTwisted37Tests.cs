@@ -39,9 +39,9 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
         }
 
         [TestMethod]
-        public void input_6_7_should_return_7_6()
+        public void input_7_6_should_return_7_6()
         {
-            SortTwisted37ShouldBe(new[] { 7, 6 }, new[] { 6, 7 });
+            SortTwisted37ShouldBe(new[] { 7, 6 }, new[] { 7, 6 });
         }
 
         private static void SortTwisted37ShouldBe(int[] expected, int[] array)
@@ -56,11 +56,11 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
     {
         public int[] SortTwisted37(int[] array)
         {
-            if (array[1] > 3 && array[1] <= 7)
+            if (array[0] == 3 && array[1] > 3 && array[1] <= 7)
             {
                 return new[] { array[1], array[0] };
             }
-
+        
             return array;
         }
     }
