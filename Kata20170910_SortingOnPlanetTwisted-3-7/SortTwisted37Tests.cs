@@ -21,12 +21,6 @@ namespace Kata20170910_SortingOnPlanetTwisted_3_7
         }
 
         [TestMethod]
-        public void input_3_5_should_return_5_3()
-        {
-            SortTwisted37ShouldBe(new[] { 5, 3 }, new[] { 3, 5 });
-        }
-
-        [TestMethod]
         public void input_3_8_should_return_3_8()
         {
             SortTwisted37ShouldBe(new[] { 3, 8 }, new[] { 3, 8 });
